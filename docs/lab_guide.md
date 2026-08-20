@@ -113,5 +113,22 @@ Cách khắc phục (chọn 1 trong 3):
 
 Mỗi nhóm trả lời 2 câu:
 
-1. Case nào nên dùng multi-agent? Vì sao?
-2. Case nào không nên dùng multi-agent? Vì sao?
+1. **Case nào nên dùng multi-agent? Vì sao?**
+
+   Khi câu hỏi cần nhiều nguồn khác nhau và các nguồn đó có thể mâu thuẫn nhau — ví dụ "so sánh
+   hai kiến trúc X và Y", "tổng hợp best practice từ nhiều tài liệu". Tách Researcher/Analyst/
+   Writer giúp có một bước phân tích độc lập để phát hiện mâu thuẫn/bằng chứng yếu trước khi
+   viết câu trả lời, và bước Critic kiểm tra citation coverage trước khi trả kết quả — điều mà
+   một single-agent gộp hết vào một lời gọi LLM khó làm tốt vì phải "vừa tìm vừa phân tích vừa
+   viết" trong cùng một ngữ cảnh. Multi-agent cũng đáng giá khi cần audit trail rõ ràng (trace
+   từng bước) để debug khi câu trả lời sai — xem agent nào, ở bước nào, tạo ra thông tin lệch.
+
+2. **Case nào không nên dùng multi-agent? Vì sao?**
+
+   Khi câu hỏi đơn giản, chỉ cần 1 nguồn thông tin hoặc không cần tra cứu (ví dụ: "định nghĩa
+   guardrail là gì", "viết lại đoạn văn sau cho ngắn gọn hơn"). Benchmark ở chế độ mock cho thấy
+   multi-agent luôn tốn thêm ít nhất 3 lời gọi LLM (Researcher + Analyst + Writer) so với 1 lời
+   gọi của baseline — với query đơn giản, chi phí và latency tăng thêm này không đổi lại chất
+   lượng tương xứng, vì không có gì để "phân tích" hay "so sánh viewpoint". Cũng nên tránh
+   multi-agent khi latency là ràng buộc cứng (ví dụ chatbot cần trả lời real-time), vì mỗi vòng
+   Supervisor → worker → Supervisor cộng dồn thời gian tuần tự.
