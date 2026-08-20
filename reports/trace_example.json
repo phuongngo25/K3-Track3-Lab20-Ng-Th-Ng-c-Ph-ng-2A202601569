@@ -1,0 +1,184 @@
+{
+  "request": {
+    "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+    "max_sources": 5,
+    "audience": "technical learners"
+  },
+  "iteration": 4,
+  "route_history": [
+    "researcher",
+    "analyst",
+    "writer",
+    "done"
+  ],
+  "sources": [
+    {
+      "title": "Mock source 1: Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": "https://mock.local/search?rank=1",
+      "snippet": "Deterministic mock finding #1 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+      "metadata": {
+        "mock": true,
+        "rank": 1
+      }
+    },
+    {
+      "title": "Mock source 2: Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": "https://mock.local/search?rank=2",
+      "snippet": "Deterministic mock finding #2 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+      "metadata": {
+        "mock": true,
+        "rank": 2
+      }
+    },
+    {
+      "title": "Mock source 3: Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": "https://mock.local/search?rank=3",
+      "snippet": "Deterministic mock finding #3 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+      "metadata": {
+        "mock": true,
+        "rank": 3
+      }
+    },
+    {
+      "title": "Mock source 4: Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": "https://mock.local/search?rank=4",
+      "snippet": "Deterministic mock finding #4 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+      "metadata": {
+        "mock": true,
+        "rank": 4
+      }
+    },
+    {
+      "title": "Mock source 5: Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": "https://mock.local/search?rank=5",
+      "snippet": "Deterministic mock finding #5 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+      "metadata": {
+        "mock": true,
+        "rank": 5
+      }
+    }
+  ],
+  "research_notes": "[mock:You are the Researcher agent in a multi-agent research system. Summarize the provided sources into concise, well-organized research notes. Every factual claim must cite its source using the [n] marker matching the source list. Do not invent sources.] Deterministic offline synthesis (no OPENAI_API_KEY set):\n[1] Mock source 1: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #1 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[2] Mock source 2: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #2 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[3] Mock source 3: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #3 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[4] Mock source 4: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #4 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[5] Mock source 5: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #5 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+  "analysis_notes": "[mock:You are the Analyst agent in a multi-agent research system. Read the research notes and sources, then extract the key claims, compare conflicting viewpoints, and explicitly flag any claim with weak or single-source evidence. Preserve [n] citation markers.] Deterministic offline synthesis (no OPENAI_API_KEY set):\nResearch notes: [mock:You are the Researcher agent in a multi-agent research system. Summarize the provided sources into concise, well-organized research notes. Every factual claim must cite its source using the [n] marker matching the source list. Do not invent sources.] Deterministic offline synth [...truncated...]\n[1] Mock source 1: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #1 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[2] Mock source 2: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #2 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[3] Mock source 3: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #3 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[4] Mock source 4: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #4 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[5] Mock source 5: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #5 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+  "final_answer": "[mock:You are the Writer agent in a multi-agent research system. Synthesize the research notes and analysis into a single clear response for the target audience. Keep [n] citation markers pointing back to the source list so claims stay traceable.] Deterministic offline synthesis (no OPENAI_API_KEY set):\nOriginal query: Research GraphRAG state-of-the-art and write a 500-word summary Research notes: [mock:You are the Researcher agent in a multi-agent research system. Summarize the provided sources into concise, well-organized research notes. Every factual claim must cite its source using the [n] mark [...truncated...]\n[1] Mock source 1: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #1 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[2] Mock source 2: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #2 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[3] Mock source 3: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #3 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[4] Mock source 4: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #4 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[5] Mock source 5: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #5 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+  "agent_results": [
+    {
+      "agent": "researcher",
+      "content": "[mock:You are the Researcher agent in a multi-agent research system. Summarize the provided sources into concise, well-organized research notes. Every factual claim must cite its source using the [n] marker matching the source list. Do not invent sources.] Deterministic offline synthesis (no OPENAI_API_KEY set):\n[1] Mock source 1: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #1 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[2] Mock source 2: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #2 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[3] Mock source 3: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #3 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[4] Mock source 4: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #4 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[5] Mock source 5: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #5 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+      "metadata": {
+        "input_tokens": 437,
+        "output_tokens": 408,
+        "cost_usd": 0.00031035,
+        "sources_found": 5
+      }
+    },
+    {
+      "agent": "analyst",
+      "content": "[mock:You are the Analyst agent in a multi-agent research system. Read the research notes and sources, then extract the key claims, compare conflicting viewpoints, and explicitly flag any claim with weak or single-source evidence. Preserve [n] citation markers.] Deterministic offline synthesis (no OPENAI_API_KEY set):\nResearch notes: [mock:You are the Researcher agent in a multi-agent research system. Summarize the provided sources into concise, well-organized research notes. Every factual claim must cite its source using the [n] marker matching the source list. Do not invent sources.] Deterministic offline synth [...truncated...]\n[1] Mock source 1: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #1 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[2] Mock source 2: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #2 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[3] Mock source 3: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #3 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[4] Mock source 4: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #4 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[5] Mock source 5: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #5 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+      "metadata": {
+        "input_tokens": 835,
+        "output_tokens": 489,
+        "cost_usd": 0.00041864999999999996
+      }
+    },
+    {
+      "agent": "writer",
+      "content": "[mock:You are the Writer agent in a multi-agent research system. Synthesize the research notes and analysis into a single clear response for the target audience. Keep [n] citation markers pointing back to the source list so claims stay traceable.] Deterministic offline synthesis (no OPENAI_API_KEY set):\nOriginal query: Research GraphRAG state-of-the-art and write a 500-word summary Research notes: [mock:You are the Researcher agent in a multi-agent research system. Summarize the provided sources into concise, well-organized research notes. Every factual claim must cite its source using the [n] mark [...truncated...]\n[1] Mock source 1: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #1 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[2] Mock source 2: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #2 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[3] Mock source 3: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #3 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[4] Mock source 4: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #4 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.\n[5] Mock source 5: Research GraphRAG state-of-the-art and write a 500-word summary — Deterministic mock finding #5 relevant to 'Research GraphRAG state-of-the-art and write a 500-word summary'. No TAVILY_API_KEY configured, so this is offline placeholder content.",
+      "metadata": {
+        "input_tokens": 1352,
+        "output_tokens": 485,
+        "cost_usd": 0.0004938
+      }
+    }
+  ],
+  "trace": [
+    {
+      "name": "supervisor_span",
+      "payload": {
+        "name": "supervisor",
+        "attributes": {
+          "iteration": 0
+        },
+        "duration_seconds": 8.66700429469347e-06
+      }
+    },
+    {
+      "name": "researcher_span",
+      "payload": {
+        "name": "researcher",
+        "attributes": {
+          "iteration": 1
+        },
+        "duration_seconds": 4.225003067404032e-05
+      }
+    },
+    {
+      "name": "supervisor_span",
+      "payload": {
+        "name": "supervisor",
+        "attributes": {
+          "iteration": 1
+        },
+        "duration_seconds": 1.7499551177024841e-06
+      }
+    },
+    {
+      "name": "analyst_span",
+      "payload": {
+        "name": "analyst",
+        "attributes": {
+          "iteration": 2
+        },
+        "duration_seconds": 2.5707995519042015e-05
+      }
+    },
+    {
+      "name": "supervisor_span",
+      "payload": {
+        "name": "supervisor",
+        "attributes": {
+          "iteration": 2
+        },
+        "duration_seconds": 1.625041477382183e-06
+      }
+    },
+    {
+      "name": "writer_span",
+      "payload": {
+        "name": "writer",
+        "attributes": {
+          "iteration": 3
+        },
+        "duration_seconds": 2.775003667920828e-05
+      }
+    },
+    {
+      "name": "critic_review",
+      "payload": {
+        "citation_coverage": 1.0,
+        "findings": []
+      }
+    },
+    {
+      "name": "critic_span",
+      "payload": {
+        "name": "critic",
+        "attributes": {
+          "iteration": 3
+        },
+        "duration_seconds": 7.458031177520752e-06
+      }
+    },
+    {
+      "name": "supervisor_span",
+      "payload": {
+        "name": "supervisor",
+        "attributes": {
+          "iteration": 3
+        },
+        "duration_seconds": 2.334010787308216e-06
+      }
+    }
+  ],
+  "errors": []
+}
